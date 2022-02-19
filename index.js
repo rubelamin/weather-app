@@ -21,7 +21,7 @@ app.use('/api/History', require('./api/route'))
 const PORT = process.env.PORT || 4444
 app.listen(PORT, () => {
     console.log('App is running in node server')
-    mongoose.connect(`mongodb+srv://admin:weather6699@cluster0.qwrrn.mongodb.net/Cluster0?retryWrites=true&w=majority`, () => {
+    mongoose.connect(`mongodb+srv://YourUser:YourPass@cluster0.qwrrn.mongodb.net/dbName?retryWrites=true&w=majority`, () => {
         console.log('Database Connected')
     })
 })
